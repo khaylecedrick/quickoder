@@ -1,0 +1,204 @@
+<!--=============================
+Author: Miecaela Garcia
+=============================-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog 2</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> <!-- tailwind css CDN-->
+</head>
+
+<body>
+
+    <!-- bg -->
+    <div class="relative w-screen h-screen"> <!-- add p-10 and bg-gray-300 if u want to see the bg -->
+
+        <!-- holder -->
+        <div class="grid w-full h-full">
+            <!--====================== 1st white bg row ======================-->
+            <div class="flex row-span-3 bg-white"></div>
+
+            <!--====================== ibon bg row ======================-->
+            <div class="flex row-span-5 bg-center bg-cover"
+                style="background-image: url(https://cdn.byronbayfn.com.au/wp-content/uploads/2020/05/15144613/glen-carrie-_oNISBwMTwo-unsplash-scaled.jpg)">
+
+                <!--======= TOP contents =======-->
+                <div class="grid w-full h-full grid-cols-2 -mt-28">
+
+                    <!-- column 1-->
+                    <div class="flex flex-col justify-start w-3/5 ml-40 space-y-6 h-3/5 ">
+                        <!-- image and name -->
+                        <div class="flex flex-row items-center">
+                            <!-- image -->
+                            <img class="object-cover w-20 h-20 mr-4 rounded-full"
+                                src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHBlcnNvbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                alt="Avatar">
+                        
+                            <!-- heading -->
+                            <h1 class="text-2xl font-bold text-black uppercase">
+                                Blogger's <br> Name
+                            </h1>
+                        </div>
+
+                        <!-- description -->
+                        <p class="font-semibold text-gray-500">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit augue sem, sit amet dignissim leo blandit eu.
+                            Duis massa felis, rutrum sed volutpat in, viverra ut enim. Phasellus ullamcorper fringilla ante ut eleifend. Etiam
+                            fermentum, erat non volutpat porta, magna lorem varius nunc, non pellentesque sem sapien eu ex. Phasellus ullamcorper fringilla ante ut eleifend. Etiam
+                            fermentum, erat non volutpat porta, magna lorem varius. Erat non volutpat porta, magna lorem varius. Erat non volutpat, magna lorem varius.
+                        </p>
+
+                        <p class="font-semibold text-gray-500">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit augue sem, sit amet dignissim leo blandit eu.
+                            Duis massa felis, rutrum sed volutpat in, viverra ut enim. Proin blandit augue sem, sit amet dignissim leo blandit. Proin blandit augue sem, sit amet dignissim leo blandit.
+                        </p>
+                    </div> 
+
+
+                    <!-- column 2-->
+                    <div class="flex justify-end mr-40">
+                        <img class="w-4/5 rounded-2xl h-3/5" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                        alt="Green Mountains">
+                    </div>
+                    
+                </div> <!-- END of TOP contents-->
+            </div> <!-- END of ibon bg -->
+
+            <!--====================== 2nd white bg row ======================-->
+            <div class="relative flex flex-row items-center justify-center bg-white">
+
+                <!--======= BOTTOM contents =======-->
+                <div class="absolute flex flex-row w-screen space-x-8 overflow-x-scroll -mt-72 overscroll-x-auto">
+                    <!--====== card 1 ======-->
+                    <div class="flex flex-row flex-shrink-0 w-4/12 overflow-hidden bg-white shadow-xl h-52 rounded-2xl">
+                        <!-- image -->
+                        <img class="object-cover object-center w-5/6 h-full"
+                            src="https://images.unsplash.com/photo-1490471050984-5f178a433ec2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTV8fGJlYWNoJTIwd2F2ZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                            alt="Beach Waves">
+                
+                        <div class="py-6 pl-6 pr-12">
+                
+                            <!-- heading -->
+                            <h1 class="text-xl font-bold text-black uppercase">
+                                title
+                            </h1>
+                
+                            <!-- description -->
+                            <p class="mt-4 mb-6 text-xs font-semibold text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat
+                                viverra.
+                            </p>
+                
+                            <!-- button -->
+                            <a href="" class="">
+                                <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div> <!-- END of card 1 -->
+                
+                    <!--====== card 2 ======-->
+                    <div class="flex flex-row flex-shrink-0 w-4/12 overflow-hidden bg-white shadow-xl h-52 rounded-2xl">
+                        <!-- image -->
+                        <img class="object-cover object-center w-5/6 h-full"
+                            src="https://images.unsplash.com/photo-1583870585423-c5548189eca1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGRlZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                            alt="Deer">
+                
+                        <div class="py-6 pl-6 pr-12">
+                
+                            <!-- heading -->
+                            <h1 class="text-xl font-bold text-black uppercase">
+                                title
+                            </h1>
+                
+                            <!-- description -->
+                            <p class="mt-4 mb-6 text-xs font-semibold text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat
+                                viverra.
+                            </p>
+                
+                            <!-- button -->
+                            <a href="" class="">
+                                <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div> <!-- END of card 2 -->
+                
+                    <!--====== card 3 ======-->
+                    <div class="flex flex-row flex-shrink-0 w-4/12 overflow-hidden bg-white shadow-xl h-52 rounded-2xl">
+                        <!-- image -->
+                        <img class="object-cover object-center w-5/6 h-full"
+                            src="https://images.unsplash.com/photo-1520333764090-778d6dc95ec3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"
+                            alt="Mangrove Forest">
+                
+                        <div class="py-6 pl-6 pr-12">
+                
+                            <!-- heading -->
+                            <h1 class="text-xl font-bold text-black uppercase">
+                                title
+                            </h1>
+                
+                            <!-- description -->
+                            <p class="mt-4 mb-6 text-xs font-semibold text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat
+                                viverra.
+                            </p>
+                
+                            <!-- button -->
+                            <a href="" class="">
+                                <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div> <!-- END of card 3 -->
+
+                    <!--====== card 4 ======-->
+                    <div class="flex flex-row flex-shrink-0 w-4/12 overflow-hidden bg-white shadow-xl h-52 rounded-2xl">
+                        <!-- image -->
+                        <img class="object-cover object-center w-5/6 h-full"
+                            src="https://images.unsplash.com/photo-1609681980718-340e7f4b11d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80"
+                            alt="Waterfalls">
+                    
+                        <div class="py-6 pl-6 pr-12">
+                    
+                            <!-- heading -->
+                            <h1 class="text-xl font-bold text-black uppercase">
+                                title
+                            </h1>
+                    
+                            <!-- description -->
+                            <p class="mt-4 mb-6 text-xs font-semibold text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris egestas quam volutpat
+                                viverra.
+                            </p>
+                    
+                            <!-- button -->
+                            <a href="" class="">
+                                <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div> <!-- END of card 4 -->
+                </div> <!-- END of BOTTOM contents-->
+            </div> <!-- END of 2nd white bg row -->
+        </div>
+    </div>
+
+    
+</body>
+</html>
