@@ -2,23 +2,27 @@
 Author: Miecaela Garcia
 =============================-->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog 1</title>
+
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> <!-- tailwind css CDN-->
 </head>
-<body>
-    <!-- bg -->
-    <div class="w-screen h-screen p-10 bg-gray-300">
 
-        <div class="relative grid w-full h-full grid-cols-7">
+<body>
+    <!-- bg: you can add (p-10 bg-gray-300) for bg-->
+    <div class="w-screen h-screen bg-white">
+        <!-- holder -->
+        <div class="relative grid w-full h-full lg:grid-cols-7">
 
             <!--======================================== white part ========================================-->
-            <div class="flex items-center justify-center col-span-3 bg-white">
+            <div class="flex items-center justify-center row-span-3 p-4 bg-white lg:col-span-3">
                 <!-- contents -->
-                <div class="items-center justify-center ml-40 mr-60 max-w-auto max-h-auto">
+                <div
+                    class="flex flex-col items-center justify-center mx-10 lg:place-items-start lg:ml-40 lg:mr-60 lg:my-36">
 
                     <!-- icon -->
                     <svg class="w-20 h-20 text-green-400 stroke-current" fill="none" stroke="currentColor"
@@ -28,100 +32,185 @@ Author: Miecaela Garcia
                         </path>
                     </svg>
 
-                    <!-- heading -->
-                    <h1 class="mt-10 text-4xl font-black text-green-400 uppercase">
+                    <!-- heading sm -->
+                    <h1
+                        class="items-center justify-center mt-4 text-2xl font-black text-green-400 uppercase md:text-3xl lg:hidden">
+                        Blogger's Name
+                    </h1>
+                    <!-- heading lg -->
+                    <h1 class="hidden mt-10 text-4xl font-black text-green-400 uppercase lg:block">
                         Blogger's <br> Name
                     </h1>
 
                     <!-- description -->
-                    <p class="mt-10 font-semibold text-gray-600">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Morbi imperdiet elementum iaculis. Sed vel suscipit tortor,
-                        sit amet ultrices dui. Aliquam erat volutpat.
+                    <p
+                        class="items-center justify-center mt-4 text-sm font-semibold text-center text-gray-600 lg:text-left md:text-lg lg:mt-10">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet elementum iaculis. Sed
+                        vel suscipit tortor, sit amet ultrices dui. Aliquam erat volutpat.
                     </p>
 
                     <!-- button -->
-                    <div class="mt-16">
-                        <a class="inline-block px-5 py-3 font-semibold text-white bg-green-400 rounded-full shadow-2xl drop-shadow-xl"
+                    <div class="mt-8 lg:mt-16">
+                        <a class="inline-block px-5 py-3 font-semibold text-white bg-green-400 rounded-full shadow-2xl hover:bg-green-600 drop-shadow-xl"
                             href="#">
                             Read Full Article
                         </a>
                     </div>
                 </div>
-            </div> <!-- end of white part -->
+            </div> <!-- END of white part -->
 
             <!--======================================== green part ========================================-->
-            <div class="col-span-4 bg-green-400">
+            <div class="row-span-4 p-4 bg-green-400 lg:col-span-4">
 
-                <!--=================== cards ===================-->
-                <div class="flex flex-row items-center justify-start w-full h-full space-x-10 -ml-44">
+                <!--=================== cards sm && md ===================-->
+                <div class="flex flex-col items-center justify-center block w-full h-full space-y-6 lg:hidden">
                     <!--======= card 1 =======-->
                     <div
-                        class="items-center justify-center w-1/3 overflow-hidden bg-white shadow-2xl h-2/3 rounded-2xl">
-                        <img class="object-cover w-full h-64"
+                        class="flex flex-row items-center justify-center w-5/6 h-48 overflow-hidden bg-white shadow-2xl md:h-2/4 rounded-2xl">
+
+                        <img class="object-cover object-center w-1/3 h-full"
                             src="https://solarimpulse.com/img/topics/green-building-social-benefits.jpg"
                             alt="Green Building">
 
-                        <div class="px-8 py-6">
+                        <div class="p-10">
 
                             <!-- heading -->
-                            <h1 class="text-4xl font-black text-black uppercase">
+                            <h1 class="text-lg font-bold text-black uppercase md:text-xl">
                                 Blog title
                             </h1>
 
                             <!-- description -->
-                            <p class="mt-4 mb-6 text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                                elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris
-                                egestas quam volutpat
-                                viverra. In pretium nec senectus erat. Et malesuada lobortis. Natoque sem et aliquam
-                                mauris egestas quam volutpat
-                                viverra. In pretium nec senectus erat. Et malesuada lobortis.
-                            </p>
+                            <p class="mt-2 mb-6 text-sm font-semibold text-gray-600 md:text-lg">Lorem ipsum dolor sit
+                                amet, consectetur
+                                adipiscing elit consectetur.
 
-                            <!-- link -->
-                            <a href="" class="mt-8 text-xl font-bold text-green-400 capitalize">
-                                Read full article
-                            </a>
+                                <!-- link -->
+                            <div class="mt-2">
+                                <a href=""
+                                    class="font-bold text-green-400 capitalize text-md md:text-lg hover:text-green-600">
+                                    Read full article
+                                </a>
+                            </div>
 
                         </div>
-                    </div> <!-- end of card 1-->
+                    </div> <!-- END of card 1-->
 
                     <!--======= card 2 =======-->
                     <div
-                        class="items-center justify-center w-1/3 overflow-hidden bg-white shadow-2xl h-2/3 rounded-2xl">
-                        <img class="object-cover w-full h-64"
+                        class="flex flex-row items-center justify-center w-5/6 h-48 overflow-hidden bg-white shadow-2xl rounded-2xl md:h-2/4">
+
+                        <img class="object-cover object-center w-1/3 h-full"
                             src="https://images.unsplash.com/photo-1553531888-973dce69bd1f?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80"
                             alt="Lady Holding a Boxed Water">
 
-                        <div class="px-8 py-6">
+                        <div class="p-10">
 
                             <!-- heading -->
-                            <h1 class="text-4xl font-black text-black uppercase">
+                            <h1 class="text-lg font-bold text-black uppercase md:text-xl">
                                 Blog title
                             </h1>
 
                             <!-- description -->
-                            <p class="mt-4 mb-6 text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                                elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris
-                                egestas quam volutpat
-                                viverra. In pretium nec senectus erat. Et malesuada lobortis. Natoque sem et aliquam
-                                mauris egestas quam volutpat
-                                viverra. In pretium nec senectus erat. Et malesuada lobortis.
-                            </p>
+                            <p class="mt-2 mb-6 text-sm font-semibold text-gray-600 md:text-lg">Lorem ipsum dolor sit
+                                amet, consectetur
+                                adipiscing elit consectetur.
 
-                            <!-- link -->
-                            <a href="" class="mt-8 text-xl font-bold text-green-400 capitalize">
-                                Read full article
-                            </a>
+                                <!-- link -->
+                            <div class="mt-2">
+                                <a href=""
+                                    class="font-bold text-green-400 capitalize text-md md:text-lg hover:text-green-600">
+                                    Read full article
+                                </a>
+                            </div>
 
                         </div>
-                    </div> <!-- end of card 2 -->
-                </div> <!-- end of cards -->
-            </div> <!-- end of green part -->
-        </div>
-    </div> <!-- end of bg -->
-  
+                    </div> <!-- END of card 2-->
+                </div> <!-- END of cards sm-->
+
+                <!--===================================================================================================================================-->
+
+                <!--=================== cards lg ===================-->
+                <!-- holder: cards lg -->
+                <div class="hidden lg:block">
+                    <div class="flex flex-row items-center justify-start w-full h-full -ml-40 space-x-10">
+                        <!--======= card 1 =======-->
+                        <div
+                            class="items-center justify-center w-2/5 overflow-hidden bg-white shadow-2xl h-4/5 rounded-2xl">
+                            <img class="object-cover w-full h-72"
+                                src="https://solarimpulse.com/img/topics/green-building-social-benefits.jpg"
+                                alt="Green Building">
+
+                            <div class="p-10">
+
+                                <!-- heading -->
+                                <h1 class="text-4xl font-bold text-black uppercase">
+                                    Blog title
+                                </h1>
+
+                                <!-- description -->
+                                <p class="mt-8 mb-6 font-semibold text-gray-600 text-md">Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing
+                                    elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris
+                                    egestas quam volutpat
+                                    viverra. In pretium nec senectus erat. Et malesuada lobortis. Natoque sem et aliquam
+                                    mauris egestas quam volutpat
+                                    viverra. In pretium nec senectus erat. Et malesuada lobortis.
+                                </p>
+
+                                <!-- link -->
+                                <div class="mt-16">
+                                    <a href=""
+                                        class="mt-8 text-xl font-bold text-green-400 capitalize hover:text-green-600">
+                                        Read full article
+                                    </a>
+                                </div>
+                            </div>
+                        </div> <!-- end of card 1-->
+
+                        <!--======= card 2 =======-->
+                        <div
+                            class="items-center justify-center w-2/5 overflow-hidden bg-white shadow-2xl h-4/5 rounded-2xl">
+                            <img class="object-cover w-full h-72"
+                                src="https://images.unsplash.com/photo-1553531888-973dce69bd1f?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80"
+                                alt="Lady Holding a Boxed Water">
+
+                            <div class="p-10">
+
+                                <!-- heading -->
+                                <h1 class="text-4xl font-bold text-black uppercase">
+                                    Blog title
+                                </h1>
+
+                                <!-- description -->
+                                <p class="mt-8 mb-6 font-semibold text-gray-600 text-md">Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing
+                                    elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris
+                                    egestas quam volutpat
+                                    viverra. In pretium nec senectus erat. Et malesuada lobortis. Natoque sem et aliquam
+                                    mauris egestas quam volutpat
+                                    viverra. In pretium nec senectus erat. Et malesuada lobortis.
+                                </p>
+
+                                <!-- link -->
+                                <div class="mt-16">
+                                    <a href=""
+                                        class="mt-8 text-xl font-bold text-green-400 capitalize hover:text-green-600">
+                                        Read full article
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div> <!-- END of card 2-->
+                    </div> <!-- END of cards lg-->
+                </div> <!-- END of holder: cards lg -->
+
+            </div> <!-- END of green part -->
+        </div> <!-- END of holder -->
+    </div> <!-- END of bg -->
+
+
 </body>
+
 </html>
