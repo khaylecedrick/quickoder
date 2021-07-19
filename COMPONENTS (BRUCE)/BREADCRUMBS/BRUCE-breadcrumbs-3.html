@@ -1,0 +1,81 @@
+<!--=============================
+Author: Miecaela Garcia
+=============================-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breadcrumbs 3</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> <!-- tailwind css CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font awesome CDN -->
+</head>
+
+<body>
+    <!-- bg -->
+    <div class="flex items-center justify-center w-screen h-screen bg-white">
+        <!-- base -->
+        <div class="relative flex flex-row items-center h-10 bg-gray-300 rounded shadow-lg w-72">
+
+            <!-- holder-->
+            <div class="grid items-center w-full h-full grid-cols-10">
+
+                <!-- home -->
+                <div class="w-full h-full row-span-2 bg-gray-300 rounded-l"></div>
+                <!-- template for triangle -->
+                <div class="inline-block w-full h-10 overflow-hidden bg-gray-300">
+                    <div
+                        class="items-center justify-center w-10 h-10 -mt-2 origin-top-left transform rotate-45 bg-gray-300 rounded shadow">
+                    </div>
+                </div>
+
+                <!-- account -->
+                <div class="w-full h-full row-span-2 bg-gray-300"></div>
+                <div class="inline-block w-full h-10 overflow-hidden bg-gray-300">
+                    <div
+                        class="items-center justify-center w-10 h-10 -mt-2 origin-top-left transform rotate-45 bg-gray-300 rounded shadow">
+                    </div>
+                </div>
+
+                <!-- blog -->
+                <div class="w-full h-full row-span-2 bg-gray-300"></div>
+                <div class="inline-block w-full h-10 overflow-hidden bg-gray-400"> <!-- dark -->
+                    <div
+                        class="items-center justify-center w-10 h-10 -mt-2 origin-top-left transform rotate-45 bg-gray-300 rounded shadow">
+                    </div>
+                </div>
+
+                <!-- projects -->
+                <div class="w-full h-full row-span-2 bg-gray-400"></div> <!-- dark -->
+                <div class="w-full h-full row-span-2 bg-gray-400"></div> <!-- dark -->
+                <div class="inline-block w-full h-10 overflow-hidden bg-gray-300">
+                    <div
+                        class="items-center justify-center w-10 h-10 -mt-2 origin-top-left transform rotate-45 bg-gray-400 rounded shadow"> <!-- dark -->
+                    </div>
+                </div>
+
+                <!-- settings -->
+                <div class="w-full h-full row-span-2 bg-gray-300 rounded-r">
+                </div>
+
+            </div>
+
+            <!-- icons -->
+            <div class="absolute items-center">
+
+                <a href="" class="ml-3"><i class="fa fa-home fa-lg" style="color:#F0F0F0"></i></a>
+                <a href="" class="ml-8"><i class="fa fa-user fa-lg" style="color:#F0F0F0"></i></a>
+                <a href="" class="ml-9"><i class="fa fa-edit fa-lg" style="color:#F0F0F0"></i></a>
+                <a href="" class="ml-7"><i class="fa fa-folder fa-lg" style="color:#F0F0F0"></i><span
+                        class="ml-1 text-xs text-white lowercase">Projects</span></a>
+                <a href="" class="ml-4"><i class="fa fa-cog fa-lg" style="color:#F0F0F0"></i></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

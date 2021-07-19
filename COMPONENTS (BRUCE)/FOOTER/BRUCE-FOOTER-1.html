@@ -1,0 +1,134 @@
+<!--=============================
+Author: Miecaela Garcia
+Edited: Khayle Cedrick Flores
+=============================-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer 1</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> <!-- tailwind css CDN-->
+</head>
+
+<body>
+    <!-- bg -->
+    <div class="flex items-center justify-center w-screen h-screen bg-white">
+        <!-- base -->
+        <div class="relative flex items-center justify-center w-full bg-center bg-cover h-3/8" style="background-image: url('FOOTER BG.png');">
+            
+            <!-- para nasa isang container sila gitna (remove/add to check: bg-yellow-100 bg-opacity-50) -->
+            <div class="flex w-5/6 md:w-4/5 h-full">
+
+                <div class="grid w-full h-full">
+                
+                    <!-- top / logo -->
+                    <div class="flex justify-start -ml-10 sm:mt-4">
+                        <div class="flex flex-col">
+                            <svg class="w-15 h-15 text-blue-500 fill-current md:w-20 h-20" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 24 24">
+                                <path
+                                    d="M5 8.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5zm9 .5l-2.519 4-2.481-1.96-4 5.96h14l-5-8zm8-4v14h-20v-14h20zm2-2h-24v18h24v-18z" />
+                            </svg>
+                            <span class="font-bold text-center text-blue-500">LOGO</span>
+                        </div>
+                    </div>
+                
+                    <!-- middle / contents -->
+                    <div class="flex items-center justify-center row-span-3">
+                        <div class="grid items-center justify-center grid-cols-3">
+                            <!-- left side -->
+                            <div class="grid grid-cols-2 -mr-10 space-x-6">
+                                <!-- company -->
+                                <div class="flex flex-col">
+                                    <h1 class="text-sm font-semibold text-blue-400 uppercase md:text-2xl">the company</h1>
+                                    <a href="" class="mt-4 text-xs text-blue-600 capitalize md:text-xl">our company</a>
+                                    <a href="" class="mt-2 text-xs text-blue-600 capitalize md:text-xl">contact us</a>
+                                </div>
+
+                                <!-- services -->
+                                <div class="flex flex-col">
+                                    <h1 class="text-sm font-semibold text-blue-400 uppercase md:text-2xl">the services</h1>
+                                    <a href="" class="mt-4 text-xs text-blue-600 capitalize md:text-xl">websites</a>
+                                    <a href="" class="mt-2 text-xs text-blue-600 capitalize md:text-xl">games</a>
+                                    <a href="" class="mt-2 text-xs text-blue-600 capitalize md:text-xl">digital marketing</a>
+                                    <a href="" class="mt-2 text-xs text-blue-600 capitalize md:text-xl">events</a>
+                                </div>
+                            </div>
+
+                            <!-- line -->
+                            <div class="flex items-center justify-center "><hr class="w-1 h-64 bg-blue-500"></div>
+                            
+                            <!-- right side -->
+                            <div class="flex flex-row items-center justify-center -ml-10">
+
+                                <!-- icons -->
+                                <div class="flex flex-row space-x-2 md:space-x-6">
+                                    <!--phone-->
+                                    <a href="">
+                                        <svg class="w-7 h-7 fill-current text-blue-500  md:w-10 h-10 md:text-white md:bg-blue-500 md:border md:border-blue-500 rounded-full"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M18.48 22.926l-1.193.658c-6.979 3.621-19.082-17.494-12.279-21.484l1.145-.637 3.714 6.467-1.139.632c-2.067 1.245 2.76 9.707 4.879 8.545l1.162-.642 3.711 6.461zm-9.808-22.926l-1.68.975 3.714 6.466 1.681-.975-3.715-6.466zm8.613 14.997l-1.68.975 3.714 6.467 1.681-.975-3.715-6.467z" />
+                                        </svg>
+                                    </a>
+                                    <!--location-->
+                                    <a href="">
+                                        <svg class="w-7 h-7 fill-current text-blue-500 md:w-10 h-10 md:text-white md:bg-blue-500 border md:border-blue-500 rounded-full"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" />
+                                        </svg>
+                                    </a>
+                                    <!--mail-->
+                                    <a href="">
+                                        <svg class="w-7 h-7 fill-current text-blue-500 md:w-10 h-10 md:bg-white border md:border-blue-500 rounded-full"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z" />
+                                        </svg>
+                                    </a>
+                                    <!--linkedin-->
+                                    <a href="">
+                                        <svg class="w-7 h-7 fill-current text-blue-500 md:w-10 h-10 md:bg-white border md:border-blue-500 rounded-full"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+                                        </svg>
+                                    </a>
+                                    <!--Facebook-->
+                                    <a href="">
+                                        <svg class="w-7 h-7 fill-current text-blue-500 md:w-10 h-10 md:bg-white border md:border-blue-500 rounded-full"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z" />
+                                        </svg>
+                                    </a>
+                                    <!--instagram-->
+                                    <a href="">
+                                        <svg class="w-7 h-7 fill-current text-blue-500 md:w-10 h-10 md:bg-white border md:border-blue-500 rounded-full"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                            <path
+                                                d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                
+                    <!-- bottom / copyright -->
+                    <div class="flex justify-end mb-4 -mr-3 text-blue-600 md:text-base">© Company Name 2021</div>
+                
+                </div>
+            </div>
+        </div> <!-- END of base -->
+    </div> <!-- END of bg -->
+
+</body>
+</html>

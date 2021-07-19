@@ -2,148 +2,363 @@
 Author: Miecaela Garcia
 =============================-->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog 3</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> <!-- tailwind css CDN-->
+
+    <!-- custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap" rel="stylesheet">
+
+    <style>
+        @font-face {
+            font-family: Nova Slim;
+            src: url('https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap');
+
+        }
+
+        .font-nova {
+            font-family: Nova Slim;
+        }
+    </style>
 </head>
+
 <body>
-    <!-- bg -->
-    <div class="w-screen h-screen p-10 bg-gray-300"><!-- add p-10 and bg-gray-300 if u want to see the bg -->
-        <!-- holder -->
-        <div class="grid w-full h-full grid-cols-4 px-20 pt-10 bg-white">
-
-            <!--=================== column 1 ==================-->
-            <div class="flex flex-col overflow-hidden">
+    <!-- bg: you can add (p-10 bg-gray-300) for bg-->
+    <div class="w-screen h-screen bg-white">
+        <!-- holder sm && md -->
+        <div class="grid block w-full h-full lg:hidden">
+            <!--=================== row 1 ==================-->
+            <div class="flex flex-row overflow-hidden">
                 <!-- image -->
-                <img class="object-cover object-center w-full h-2/3"
-                    src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-                    alt="Salad in Black Plate">
-                
-                <div class="flex flex-row items-center justify-center mt-8">
-                    <div>
-                        <!-- number -->
-                        <span class="tracking-tighter uppercase text-9xl">
-                            01
-                        </span>
-                    
-                        <hr style="width:100%; border-width:2; border-color:black">
+                <img class="object-cover object-center w-32 h-full md:w-full"
+                    src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2FsYWQlMjBib3dsfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="Salad Bowl">
+
+                <!-- contents -->
+                <div class="flex flex-col">
+                    <div class="flex flex-row items-center justify-center p-2 md:p-4">
+                        <div>
+                            <!-- number -->
+                            <span class="text-4xl uppercase font-nova md:text-6xl">
+                                01
+                            </span>
+
+                            <hr style="width:100%; border-width:2; border-color:black">
+                        </div>
+
+                        <p class="block mt-4 ml-6 text-sm font-bold text-gray-500 md:text-lg">Lorem ipsum dolor sit
+                            amet, consectetur
+                            adipiscing
+                            elit. Molestie parturient et sem vel.
+                        </p>
                     </div>
-                    
-                    <p class="mt-4 ml-8 font-bold text-gray-500 text-md">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris.
-                    </p>
-                </div>
 
-                <div class="flex justify-end mt-4">
-                    <svg class="w-20 h-20 text-gray-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                            clip-rule="evenodd" />
-                    </svg>
+                    <!-- icon -->
+                    <a class="flex justify-end pr-2 md:mt-10 md:pr-4" href="">
+                        <svg class="w-10 h-10 text-gray-500 fill-current md:w-14 md:h-14" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
                 </div>
-            </div>
+            </div> <!-- END of row 1 -->
 
-            <!--=================== column 2 ==================-->
-            <div class="flex flex-col overflow-hidden">
+            <!--=================== row 2 ==================-->
+            <div class="flex flex-row overflow-hidden">
                 <!-- image -->
-                <img class="object-cover object-center w-full h-2/3"
-                    src="https://www.ccmhhealth.com/wp-content/uploads/2019/10/ccmh_blog_burgerfries-770x578.png"
+                <img class="object-cover object-center w-32 h-full md:w-full"
+                    src="https://images.unsplash.com/photo-1517947138120-81858a0b2ab7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80"
                     alt="Burger and Fries">
-            
-                <div class="flex flex-row items-center justify-center mt-8">
-                    <div>
-                        <!-- number -->
-                        <span class="tracking-tighter uppercase text-9xl">
-                            02
-                        </span>
-            
-                        <hr style="width:100%; border-width:2; border-color:black">
-                    </div>
-            
-                    <p class="mt-4 ml-8 font-bold text-gray-500 text-md">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris.
-                    </p>
-                </div>
-            
-                <div class="flex justify-end mt-4">
-                    <svg class="w-20 h-20 text-gray-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
-            </div>
 
-            <!--=================== column 3 ==================-->
-            <div class="flex flex-col overflow-hidden">
+                <!-- contents -->
+                <div class="flex flex-col">
+                    <div class="flex flex-row items-center justify-center p-2">
+                        <div>
+                            <!-- number -->
+                            <span class="text-4xl tracking-tighter uppercase font-nova md:text-6xl">
+                                02
+                            </span>
+
+                            <hr style="width:100%; border-width:2; border-color:black">
+                        </div>
+
+                        <p class="mt-4 ml-6 text-sm font-bold text-gray-500 md:text-lg">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing
+                            elit. Molestie parturient et sem vel.
+                        </p>
+                    </div>
+
+                    <!-- icon -->
+                    <a class="flex justify-end pr-2 md:mt-10 md:pr-4" href="">
+                        <svg class="w-10 h-10 text-gray-500 fill-current md:w-14 md:h-14" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div> <!-- END of row 2 -->
+
+            <!--=================== row 3 ==================-->
+            <div class="flex flex-row overflow-hidden">
                 <!-- image -->
-                <img class="object-cover object-center w-full h-2/3"
+                <img class="object-cover object-center w-32 h-full md:w-full"
                     src="https://images.unsplash.com/photo-1572696829022-8fc84c43cf5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8OTQyOTA5M3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=416&q=60"
                     alt="Mixed Berries">
-            
-                <div class="flex flex-row items-center justify-center mt-8">
-                    <div>
-                        <!-- number -->
-                        <span class="tracking-tighter uppercase text-9xl">
-                            03
-                        </span>
-            
-                        <hr style="width:100%; border-width:2; border-color:black">
-                    </div>
-            
-                    <p class="mt-4 ml-8 font-bold text-gray-500 text-md">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris.
-                    </p>
-                </div>
-            
-                <div class="flex justify-end mt-4">
-                    <svg class="w-20 h-20 text-gray-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
-            </div>
 
-            <!--=================== column 4 ==================-->
-            <div class="flex flex-col overflow-hidden">
+                <!-- contents -->
+                <div class="flex flex-col">
+                    <div class="flex flex-row items-center justify-center p-2">
+                        <div>
+                            <!-- number -->
+                            <span class="text-4xl uppercase font-nova md:text-6xl">
+                                03
+                            </span>
+
+                            <hr style="width:100%; border-width:2; border-color:black">
+                        </div>
+
+                        <p class="mt-4 ml-6 text-sm font-bold text-gray-500 md:text-lg">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing
+                            elit. Molestie parturient et sem vel.
+                        </p>
+                    </div>
+
+                    <!-- icon -->
+                    <a class="flex justify-end pr-2 md:mt-10 md:pr-4" href="">
+                        <svg class="w-10 h-10 text-gray-500 fill-current md:w-14 md:h-14" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div> <!-- END of row 3 -->
+
+            <!--=================== row 4 ==================-->
+            <div class="flex flex-row overflow-hidden">
                 <!-- image -->
-                <img class="object-cover object-center w-full h-2/3"
-                    src="https://miro.medium.com/max/1200/1*wekTbyk0McFRo34Npl_EwA.jpeg"
-                    alt="Soup in Ladle">
-            
-                <div class="flex flex-row items-center justify-center mt-8">
-                    <div>
-                        <!-- number -->
-                        <span class="tracking-tighter uppercase text-9xl">
-                            04
-                        </span>
-            
-                        <hr style="width:100%; border-width:2; border-color:black">
+                <img class="object-cover object-center w-32 h-full md:w-full"
+                    src="https://miro.medium.com/max/1200/1*wekTbyk0McFRo34Npl_EwA.jpeg" alt="Soup in Ladle">
+
+                <!-- contents -->
+                <div class="flex flex-col">
+                    <div class="flex flex-row items-center justify-center p-2">
+                        <div>
+                            <!-- number -->
+                            <span class="text-4xl uppercase font-nova md:text-6xl">
+                                04
+                            </span>
+
+                            <hr style="width:100%; border-width:2; border-color:black">
+                        </div>
+
+                        <p class="mt-4 ml-6 text-sm font-bold text-gray-500 md:text-lg">Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing
+                            elit. Molestie parturient et sem vel.
                     </div>
-            
-                    <p class="mt-4 ml-8 font-bold text-gray-500 text-md">Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris.
-                    </p>
+
+                    <!-- icon -->
+                    <a class="flex justify-end pr-2 md:mt-10 md:pr-4" href="">
+                        <svg class="w-10 h-10 text-gray-500 fill-current md:w-14 md:h-14"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
                 </div>
-            
-                <div class="flex justify-end mt-4">
-                    <svg class="w-20 h-20 text-gray-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
+            </div> <!-- END of row 4 -->
+        </div> <!-- END of holder sm && md -->
+
+        <!--====================================================================================================================================-->
+
+        <!-- holder lg && 2xl -->
+        <div class="hidden lg:block">
+            <div class="grid w-full h-full grid-cols-4 px-10 pt-5 bg-white 2xl:px-20 2xl:pt-10">
+
+                <!--=================== column 1 ==================-->
+                <div class="flex flex-col overflow-hidden">
+                    <!-- image -->
+                    <img class="object-cover object-center w-full h-2/3"
+                        src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                        alt="Salad in Black Plate">
+
+                    <div class="flex flex-row items-center justify-center mt-4 2xl:mt-8">
+                        <div>
+                            <!-- number -->
+                            <span class="tracking-widest uppercase text-7xl 2xl:text-9xl font-nova">
+                                01
+                            </span>
+
+                            <hr style="width:100%; border-width:2; border-color:black">
+                        </div>
+
+                        <!-- text lg -->
+                        <p class="block mt-4 ml-8 font-bold text-gray-500 text-md 2xl:hidden">Lorem ipsum dolor sit
+                            amet, adipiscing
+                            elit. Molestie parturient et sem ipsum volutpat.
+                        </p>
+
+                        <!-- text 2xl -->
+                        <p class="hidden mt-4 ml-8 font-bold text-gray-500 text-md 2xl:block">Lorem ipsum dolor sit
+                            amet, consectetur adipiscing
+                            elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris.
+                        </p>
+                    </div>
+
+                    <a class="flex justify-end mt-4" href="">
+                        <svg class="w-16 h-16 text-gray-500 fill-current 2xl:w-20 2xl:h-20 hover:text-gray-700"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div> <!-- END of column 1 -->
+
+                <!--=================== column 2 ==================-->
+                <div class="flex flex-col overflow-hidden">
+                    <!-- image -->
+                    <img class="object-cover object-center w-full h-2/3"
+                        src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                        alt="Salad in Black Plate">
+
+                    <div class="flex flex-row items-center justify-center mt-4 2xl:mt-8">
+                        <div>
+                            <!-- number -->
+                            <span class="uppercase text-7xl 2xl:text-9xl font-nova">
+                                02
+                            </span>
+
+                            <hr style="width:100%; border-width:2; border-color:black">
+                        </div>
+
+                        <!-- text lg -->
+                        <p class="block mt-4 ml-8 font-bold text-gray-500 text-md 2xl:hidden">Lorem ipsum dolor sit
+                            amet, adipiscing
+                            elit. Molestie parturient et sem ipsum volutpat.
+                        </p>
+
+                        <!-- text 2xl -->
+                        <p class="hidden mt-4 ml-8 font-bold text-gray-500 text-md 2xl:block">Lorem ipsum dolor sit
+                            amet, consectetur
+                            adipiscing
+                            elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris.
+                        </p>
+                    </div>
+
+                    <a class="flex justify-end mt-4" href="">
+                        <svg class="w-16 h-16 text-gray-500 fill-current 2xl:w-20 2xl:h-20 hover:text-gray-700"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div> <!-- END of column 2 -->
+
+                <!--=================== column 3 ==================-->
+                <div class="flex flex-col overflow-hidden">
+                    <!-- image -->
+                    <img class="object-cover object-center w-full h-2/3"
+                        src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                        alt="Salad in Black Plate">
+
+                    <div class="flex flex-row items-center justify-center mt-4 2xl:mt-8">
+                        <div>
+                            <!-- number -->
+                            <span class="uppercase text-7xl 2xl:text-9xl font-nova">
+                                03
+                            </span>
+
+                            <hr style="width:100%; border-width:2; border-color:black">
+                        </div>
+
+                        <!-- text lg -->
+                        <p class="block mt-4 ml-8 font-bold text-gray-500 text-md 2xl:hidden">Lorem ipsum dolor sit
+                            amet, adipiscing
+                            elit. Molestie parturient et sem ipsum volutpat.
+                        </p>
+
+                        <!-- text 2xl -->
+                        <p class="hidden mt-4 ml-8 font-bold text-gray-500 text-md 2xl:block">Lorem ipsum dolor sit
+                            amet, consectetur
+                            adipiscing
+                            elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris.
+                        </p>
+                    </div>
+
+                    <a class="flex justify-end mt-4" href="">
+                        <svg class="w-16 h-16 text-gray-500 fill-current 2xl:w-20 2xl:h-20 hover:text-gray-700"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div> <!-- END of column 3 -->
+
+                <!--=================== column 4 ==================-->
+                <div class="flex flex-col overflow-hidden">
+                    <!-- image -->
+                    <img class="object-cover object-center w-full h-2/3"
+                        src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                        alt="Salad in Black Plate">
+
+                    <div class="flex flex-row items-center justify-center mt-4 2xl:mt-8">
+                        <div>
+                            <!-- number -->
+                            <span class="uppercase text-7xl 2xl:text-9xl font-nova">
+                                04
+                            </span>
+
+                            <hr style="width:100%; border-width:2; border-color:black">
+                        </div>
+
+                        <!-- text lg -->
+                        <p class="block mt-4 ml-8 font-bold text-gray-500 text-md 2xl:hidden">Lorem ipsum dolor sit
+                            amet, adipiscing
+                            elit. Molestie parturient et sem ipsum volutpat.
+                        </p>
+
+                        <!-- text 2xl -->
+                        <p class="hidden mt-4 ml-8 font-bold text-gray-500 text-md 2xl:block">Lorem ipsum dolor sit
+                            amet, consectetur
+                            adipiscing
+                            elit. Molestie parturient et sem ipsum volutpat vel. Natoque sem et aliquam mauris.
+                        </p>
+                    </div>
+
+                    <a class="flex justify-end mt-4" href="">
+                        <svg class="w-16 h-16 text-gray-500 fill-current 2xl:w-20 2xl:h-20 hover:text-gray-700"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div> <!-- END of column 4 -->
+
             </div>
+        </div> <!-- END of holder lg && 2xl -->
 
-        </div>
+    </div>
+    <!--END of bg -->
 
-    </div><!--END of bg -->
 </body>
+
 </html>
